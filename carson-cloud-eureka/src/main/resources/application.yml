@@ -1,0 +1,15 @@
+server:
+  port: ${SERVICE_PORT:8761}
+
+spring:
+  application:
+    name: carson-cloud-eureka
+  profiles:
+    active: ${SPRING_PROFILE:dev}
+
+logging:
+  file:
+    name: ${logging.file.path}/application.log
+    path: /log/${spring.application.name}
+  level:
+    root: info

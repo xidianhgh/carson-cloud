@@ -1,0 +1,7 @@
+server:
+  port: ${SERVICE_PORT:8500}
+spring:
+  application:
+    name: carson-cloud-config
+  profiles:
+    active: ${SPRING_PROFILE:dev}

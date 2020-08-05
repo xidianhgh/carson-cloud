@@ -1,0 +1,8 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    register-with-eureka: true
+  instance:
+    lease-expiration-duration-in-seconds: 10 #如果在这时间之内没有给你发心跳，就代表我死了，将我踢掉
+    lease-renewal-interval-in-seconds: 3 #向服务端发送一次心跳，证明自己依然存活
